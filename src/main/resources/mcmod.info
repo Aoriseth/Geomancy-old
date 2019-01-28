@@ -1,0 +1,16 @@
+[
+{
+  "modid": "geomancermod",
+  "name": "Geomancy",
+  "description": "Mod about controlling and manipulating the earth.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Syntiskar"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
