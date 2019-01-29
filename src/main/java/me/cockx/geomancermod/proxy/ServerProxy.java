@@ -1,4 +1,4 @@
-package me.cockx.minecraft.geomancermod.proxy;
+package me.cockx.geomancermod.proxy;
 
 public class ServerProxy extends CommonProxy {
 }

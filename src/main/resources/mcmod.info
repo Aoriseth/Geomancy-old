@@ -2,7 +2,7 @@
 {
   "modid": "geomancermod",
   "name": "Geomancy",
-  "description": "Mod about controlling and manipulating the earth.",
+  "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
