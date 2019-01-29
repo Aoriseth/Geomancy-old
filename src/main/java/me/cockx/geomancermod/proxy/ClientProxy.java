@@ -1,5 +1,6 @@
 package me.cockx.geomancermod.proxy;
 
+import me.cockx.geomancermod.ModBlocks;
 import me.cockx.geomancermod.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,5 +20,6 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event){
         ModItems.initModels();
+        ModBlocks.initModels();
     }
 }
