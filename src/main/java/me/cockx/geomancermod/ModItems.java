@@ -1,18 +1,15 @@
 package me.cockx.geomancermod;
 
-import me.cockx.geomancermod.items.MushItem;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import me.cockx.geomancermod.items.ItemBase;
+import net.minecraft.item.Item;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModItems {
 
-    @GameRegistry.ObjectHolder("geomancermod:mushitem")
-    public static MushItem mushItem;
+    public static final List<Item> ITEM_LIST = new ArrayList<>();
 
+    public static final Item MUSH = new ItemBase("mush");
 
-    @SideOnly(Side.CLIENT)
-    public static void initModels(){
-        mushItem.initModel();
-    }
 }

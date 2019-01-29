@@ -1,17 +1,15 @@
 package me.cockx.geomancermod;
 
-import me.cockx.geomancermod.blocks.DregBlock;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import me.cockx.geomancermod.blocks.BlockBase;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModBlocks {
 
-    @GameRegistry.ObjectHolder("geomancermod:dregblock")
-    public static DregBlock dregBlock;
+    public static final List<Block> BLOCK_LIST = new ArrayList<>();
 
-    @SideOnly(Side.CLIENT)
-    public static void initModels(){
-        dregBlock.initModel();
-    }
+    public static final Block DREG = new BlockBase("dreg", Material.GROUND);
 }
