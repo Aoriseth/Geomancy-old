@@ -11,5 +11,6 @@ public class ModItems {
     public static final List<Item> ITEM_LIST = new ArrayList<>();
 
     public static final Item MUSH = new ItemBase("mush");
+    public static final Item GLUEBALL = new ItemBase("glueball");
 
 }
