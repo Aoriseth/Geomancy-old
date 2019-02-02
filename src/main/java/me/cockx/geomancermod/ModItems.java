@@ -13,5 +13,6 @@ public class ModItems {
 
     public static final Item MUSH = new ItemBase("mush");
     public static final Item GLUEBALL = new GlueBallItem("glueball");
+    public static final Item CHARRED_MUSH = new ItemBase("charredmush");
 
 }

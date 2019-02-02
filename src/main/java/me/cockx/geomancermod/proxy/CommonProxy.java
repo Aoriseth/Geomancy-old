@@ -1,6 +1,7 @@
 package me.cockx.geomancermod.proxy;
 
 import me.cockx.geomancermod.Config;
+import me.cockx.geomancermod.ModRecipes;
 import me.cockx.geomancermod.blocks.BlockBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
@@ -23,7 +24,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
-
+        ModRecipes.init();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
