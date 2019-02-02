@@ -1,5 +1,6 @@
 package me.cockx.geomancermod;
 
+import me.cockx.geomancermod.items.GlueBallItem;
 import me.cockx.geomancermod.items.ItemBase;
 import net.minecraft.item.Item;
 
@@ -11,6 +12,6 @@ public class ModItems {
     public static final List<Item> ITEM_LIST = new ArrayList<>();
 
     public static final Item MUSH = new ItemBase("mush");
-    public static final Item GLUEBALL = new ItemBase("glueball");
+    public static final Item GLUEBALL = new GlueBallItem("glueball");
 
 }

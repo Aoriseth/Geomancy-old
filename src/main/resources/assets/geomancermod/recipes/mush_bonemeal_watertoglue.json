@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "geomancermod:mush"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dyeWhite"
+    }
+
+  ],
+  "result":
+    {
+      "item": "geomancermod:glueball",
+      "count": 2
+    }
+}

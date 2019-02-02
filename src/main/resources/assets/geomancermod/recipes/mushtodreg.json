@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "geomancermod:mush",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "geomancermod:dreg",
+    "count": 8,
+    "data": 0
+  }
+}
