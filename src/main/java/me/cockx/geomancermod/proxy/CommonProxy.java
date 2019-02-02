@@ -2,7 +2,7 @@ package me.cockx.geomancermod.proxy;
 
 import me.cockx.geomancermod.Config;
 import me.cockx.geomancermod.ModRecipes;
-import me.cockx.geomancermod.blocks.BlockBase;
+import me.cockx.geomancermod.handlers.MainCompatHandler;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +21,7 @@ public class CommonProxy {
         File directory = event.getSuggestedConfigurationFile();
         config = new Configuration(directory);
         Config.readConfig();
+        MainCompatHandler.registerTOP();
     }
 
     public void init(FMLInitializationEvent event) {
