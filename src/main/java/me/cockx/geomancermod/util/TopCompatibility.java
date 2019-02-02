@@ -23,6 +23,7 @@ public class TopCompatibility {
         FMLInterModComms.sendFunctionMessage("theoneprobe","getTheOneProbe","mcjty.modtut.compat.top.TOPCompatibility$GetTheOneProbe");
     }
 
+    @SuppressWarnings("unused")
     private static class GetTheOneProbe implements Function<ITheOneProbe,Void>{
 
         static ITheOneProbe probe;
