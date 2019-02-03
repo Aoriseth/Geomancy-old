@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "d",
+    "b"
+  ],
+  "key":
+  {
+    "d":
+    {
+      "item": "minecraft:dirt",
+      "data": 0
+    },
+    "b":
+    {
+      "item": "minecraft:bread",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "geomancermod:dirtsandwich",
+    "count": 1,
+    "data": 0
+  }
+}
