@@ -1,6 +1,6 @@
 package me.cockx.geomancermod;
 
-import me.cockx.geomancermod.items.FoodItemBase;
+import me.cockx.geomancermod.items.DirtSandwichItem;
 import me.cockx.geomancermod.items.GlueBallItem;
 import me.cockx.geomancermod.items.ItemBase;
 import me.cockx.geomancermod.items.MineralChunkItem;
@@ -29,7 +29,7 @@ public class ModItems {
     public static final Item MUSH = new ItemBase("mush");
     public static final Item GLUEBALL = new GlueBallItem("glueball");
     public static final Item CHARRED_MUSH = new ItemBase("charredmush");
-    public static final Item DIRT_SANDWICH = new FoodItemBase("dirtsandwich",1,1f,false);
+    public static final Item DIRT_SANDWICH = new DirtSandwichItem("dirtsandwich",1,1f,false);
     public static final Item MINERAL_CHUNK = new MineralChunkItem("mineralchunk");
 
     // Tools
