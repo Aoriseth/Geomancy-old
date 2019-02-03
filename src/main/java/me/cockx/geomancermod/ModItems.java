@@ -3,9 +3,8 @@ package me.cockx.geomancermod;
 import me.cockx.geomancermod.items.FoodItemBase;
 import me.cockx.geomancermod.items.GlueBallItem;
 import me.cockx.geomancermod.items.ItemBase;
-import me.cockx.geomancermod.items.tools.ToolSword;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemSword;
+import me.cockx.geomancermod.items.tools.*;
+import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.ArrayList;
@@ -29,6 +28,9 @@ public class ModItems {
 
     // Tools
     public static final ItemSword MINERAL_SWORD = new ToolSword("mineral_sword",MATERIAL_MINERAL);
-
+    public static final ItemSpade MINERAL_SHOVEL = new ToolSpade("mineral_shovel",MATERIAL_MINERAL);
+    public static final ItemPickaxe MINERAL_PICKAXE = new ToolPickaxe("mineral_pickaxe",MATERIAL_MINERAL);
+    public static final ItemAxe MINERAL_AXE = new ToolAxe("mineral_axe",MATERIAL_MINERAL);
+    public static final ItemHoe MINERAL_HOE = new ToolHoe("mineral_hoe",MATERIAL_MINERAL);
 
 }
