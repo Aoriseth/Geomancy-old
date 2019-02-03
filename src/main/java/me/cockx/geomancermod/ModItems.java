@@ -3,6 +3,7 @@ package me.cockx.geomancermod;
 import me.cockx.geomancermod.items.FoodItemBase;
 import me.cockx.geomancermod.items.GlueBallItem;
 import me.cockx.geomancermod.items.ItemBase;
+import me.cockx.geomancermod.items.MineralChunkItem;
 import me.cockx.geomancermod.items.armor.ArmorBase;
 import me.cockx.geomancermod.items.tools.*;
 import net.minecraft.init.SoundEvents;
@@ -29,6 +30,7 @@ public class ModItems {
     public static final Item GLUEBALL = new GlueBallItem("glueball");
     public static final Item CHARRED_MUSH = new ItemBase("charredmush");
     public static final Item DIRT_SANDWICH = new FoodItemBase("dirtsandwich",1,1f,false);
+    public static final Item MINERAL_CHUNK = new MineralChunkItem("mineralchunk");
 
     // Tools
     public static final ItemSword MINERAL_SWORD = new ToolSword("mineral_sword",MATERIAL_MINERAL);
