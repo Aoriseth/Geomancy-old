@@ -10,8 +10,8 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nonnull;
 
-public class MineralChunkItem extends ItemBase {
-    public MineralChunkItem(String name) {
+public class DirtyMineralChunkItem extends ItemBase {
+    public DirtyMineralChunkItem(String name) {
         super(name);
     }
 
@@ -19,7 +19,7 @@ public class MineralChunkItem extends ItemBase {
     @Nonnull
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, @Nonnull EnumHand handIn) {
         ItemStack stack = playerIn.getHeldItem(handIn);
-        if(!worldIn.isRemote){
+        if(!worldIn.isRemote&&!playerIn.isSneaking()){
             playerIn.sendMessage(new TextComponentString("The chunk glitters in the palm of your hand. Perhaps you can craft a tool from it?"));
         }
         return ActionResult.newResult(EnumActionResult.SUCCESS,stack);

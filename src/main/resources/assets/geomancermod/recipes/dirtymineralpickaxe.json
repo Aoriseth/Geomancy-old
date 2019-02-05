@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xmx",
+    " s ",
+    " s "
+  ],
+  "key":
+  {
+    "m":
+    {
+      "item": "geomancermod:dirtymineralchunk",
+      "data": 0
+    },
+    "x":
+    {
+      "type": "forge:ore_dict",
+      "ore": "cobblestone"
+    },
+    "s":
+    {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result":
+  {
+    "item": "geomancermod:mineral_pickaxe",
+    "count": 1,
+    "data": 150
+  }
+}

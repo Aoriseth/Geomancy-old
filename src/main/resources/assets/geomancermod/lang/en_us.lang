@@ -4,6 +4,8 @@ item.geomancermod.glueball.name=Glue Ball
 item.geomancermod.charredmush.name=Charred Mush
 item.geomancermod.dirtsandwich.name=Dirt Sandwich
 item.geomancermod.mineralchunk.name=Mineral Chunk
+item.geomancermod.dirtymineralchunk.name=Dirty Mineral Chunk
+item.geomancermod.anteater.name=AntEater [debugger]
 
 
 // Tools
