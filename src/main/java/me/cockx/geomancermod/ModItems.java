@@ -1,9 +1,6 @@
 package me.cockx.geomancermod;
 
-import me.cockx.geomancermod.items.DirtSandwichItem;
-import me.cockx.geomancermod.items.GlueBallItem;
-import me.cockx.geomancermod.items.ItemBase;
-import me.cockx.geomancermod.items.MineralChunkItem;
+import me.cockx.geomancermod.items.*;
 import me.cockx.geomancermod.items.armor.ArmorBase;
 import me.cockx.geomancermod.items.tools.*;
 import net.minecraft.init.SoundEvents;
@@ -30,12 +27,13 @@ public class ModItems {
     public static final Item GLUEBALL = new GlueBallItem("glueball");
     public static final Item CHARRED_MUSH = new ItemBase("charredmush");
     public static final Item DIRT_SANDWICH = new DirtSandwichItem("dirtsandwich",1,1f,false);
-    public static final Item MINERAL_CHUNK = new MineralChunkItem("mineralchunk");
+    public static final Item MINERAL_CHUNK = new ItemBase("mineralchunk");
+    public static final Item DIRTY_MINERAL_CHUNK = new DirtyMineralChunkItem("dirtymineralchunk");
 
     // Tools
     public static final ItemSword MINERAL_SWORD = new ToolSword("mineral_sword",MATERIAL_MINERAL);
     public static final ItemSpade MINERAL_SHOVEL = new ToolSpade("mineral_shovel",MATERIAL_MINERAL);
-    public static final ItemPickaxe MINERAL_PICKAXE = new ToolPickaxe("mineral_pickaxe",MATERIAL_MINERAL);
+    public static final ItemPickaxe MINERAL_PICKAXE = new MineralPickaxe("mineral_pickaxe",MATERIAL_MINERAL);
     public static final ItemAxe MINERAL_AXE = new ToolAxe("mineral_axe",MATERIAL_MINERAL);
     public static final ItemHoe MINERAL_HOE = new ToolHoe("mineral_hoe",MATERIAL_MINERAL);
 
@@ -45,5 +43,9 @@ public class ModItems {
     public static final Item MINERAL_CHESTPLATE = new ArmorBase("mineral_chestplate",ARMOR_MATERIAL_MINERAL,1, EntityEquipmentSlot.CHEST);
     public static final Item MINERAL_LEGGINGS = new ArmorBase("mineral_leggings",ARMOR_MATERIAL_MINERAL,2, EntityEquipmentSlot.LEGS);
     public static final Item MINERAL_BOOTS = new ArmorBase("mineral_boots",ARMOR_MATERIAL_MINERAL,1, EntityEquipmentSlot.FEET);
+
+
+    // Other
+    public static final Item ANTEATER = new AntEater("anteater");
 
 }
