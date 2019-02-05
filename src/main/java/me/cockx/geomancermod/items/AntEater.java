@@ -1,10 +1,13 @@
 package me.cockx.geomancermod.items;
 
 import me.cockx.geomancermod.ModItems;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
@@ -32,5 +35,14 @@ public class AntEater extends ItemBase{
         }
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
+    }
+
+    @Override
+    public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
+        if(!worldIn.isRemote){
+            entityLiving.sendMessage(new TextComponentString("Broke: "+state.getBlock().getLocalizedName()));
+            entityLiving.sendMessage(new TextComponentString(state.getBlock().getUnlocalizedName()));
+        }
+        return super.onBlockDestroyed(stack, worldIn, state, pos, entityLiving);
     }
 }
