@@ -4,6 +4,7 @@ import me.cockx.geomancermod.ModItems;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
@@ -28,11 +29,13 @@ public class AntEater extends ItemBase{
             playerIn.sendMessage(new TextComponentString(""+stackInSlot.getUnlocalizedName()));
             playerIn.sendMessage(new TextComponentString("Amount: "+stackInSlot.getCount()));
             playerIn.sendMessage(new TextComponentString("Metadata: "+stackInSlot.getMetadata()));
+
             if (playerIn.isSneaking()){
                 playerIn.inventory.clear();
                 playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.ANTEATER,1));
             }
         }
+        playerIn.playSound(SoundEvents.UI_TOAST_IN,1f,1f);
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
