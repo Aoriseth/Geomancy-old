@@ -1,6 +1,8 @@
 package me.cockx.geomancermod.items.tools;
 
 import me.cockx.geomancermod.ModItems;
+import me.cockx.geomancermod.proxy.CommonProxy;
+import me.cockx.geomancermod.util.ParticlePacket;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -10,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 
 import javax.annotation.Nonnull;
 
@@ -26,6 +29,10 @@ public class MineralPickaxe extends ToolPickaxe {
                     if(!worldIn.isRemote){
                         worldIn.spawnEntity(new EntityItem(worldIn,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(ModItems.MINERAL_CHUNK,1)));
                         worldIn.playSound(null,pos.getX(),pos.getY(),pos.getZ(),SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP,SoundCategory.AMBIENT,1f,1f);
+
+                        ParticlePacket particlePacket = new ParticlePacket(pos.getX(), pos.getY(), pos.getZ());
+                        TargetPoint target = new TargetPoint(worldIn.provider.getDimension(), pos.getX() + 0.5D, pos.getY() + 1.0D, pos.getZ() + 0.5D, 20.d);
+                        CommonProxy.simpleNetworkWrapper.sendToAllAround(particlePacket, target);
                     }
                 }
             }
