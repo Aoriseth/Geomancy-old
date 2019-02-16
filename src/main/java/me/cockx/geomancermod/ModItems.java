@@ -47,5 +47,8 @@ public class ModItems {
 
     // Other
     public static final Item ANTEATER = new AntEater("anteater");
+    public static final Item AWESTONE = new AweStone("awestone");
+    public static final Item TROCK = new Trock("trock");
+
 
 }
