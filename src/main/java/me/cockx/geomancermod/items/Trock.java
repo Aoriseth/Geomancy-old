@@ -1,5 +1,6 @@
 package me.cockx.geomancermod.items;
 
+import me.cockx.geomancermod.ModBlocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -28,7 +29,7 @@ public class Trock extends ItemBase {
                     BlockPos newpos = position.east(i);
                     newpos = newpos.north(j);
                     if (worldIn.getBlockState(newpos).getBlock().equals(Blocks.AIR)){
-                        worldIn.setBlockState(newpos, Blocks.SANDSTONE.getDefaultState());
+                        worldIn.setBlockState(newpos, ModBlocks.AEROSAND.getDefaultState());
                     }
 
                 }
