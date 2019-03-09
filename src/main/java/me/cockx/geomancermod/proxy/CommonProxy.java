@@ -1,6 +1,7 @@
 package me.cockx.geomancermod.proxy;
 
 import me.cockx.geomancermod.Config;
+import me.cockx.geomancermod.GeomancerMod;
 import me.cockx.geomancermod.ModRecipes;
 import me.cockx.geomancermod.handlers.MainCompatHandler;
 import me.cockx.geomancermod.handlers.ServerHandlerDummy;
@@ -37,6 +38,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent event) {
         ModRecipes.init();
+        NetworkRegistry.INSTANCE.registerGuiHandler(GeomancerMod.instance,new GuiProxy());
     }
 
     public void postInit(FMLPostInitializationEvent event) {
